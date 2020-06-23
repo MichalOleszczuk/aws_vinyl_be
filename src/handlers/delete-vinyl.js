@@ -34,6 +34,10 @@ exports.deleteVinylHandler = async (event) => {
 
   const response = {
     statusCode: 200,
+    headers: {
+      'Access-Control-Allow-Origin': 'https://master.d25yppnk4ptyau.amplifyapp.com',
+      'Content-Type': 'application/json',
+    },
   };
 
   // All log statements are written to CloudWatch
